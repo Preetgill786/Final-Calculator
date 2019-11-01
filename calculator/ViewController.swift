@@ -20,9 +20,7 @@ class ViewController: UIViewController {
  
        @IBAction  func numbers(_ sender: UIButton) {
         
-        if result.text == "0"{
-            result.text = ""
-        }
+      
       
         switch sender.tag {
         case 0:
@@ -78,7 +76,7 @@ class ViewController: UIViewController {
             
             // "=" for displaying result
             op(operatorName: aOperator)
-            
+            opp = false
             break
             
         case 12:
@@ -148,6 +146,9 @@ class ViewController: UIViewController {
         case 18:
             // clear C
             result.text = "0"
+            opp = false
+            num1 = 0.0
+            num2 = 0.0
             break
         default:
             print("")
@@ -239,6 +240,7 @@ class ViewController: UIViewController {
     result.text = String(num2)
     }
         opp = false
+        
         
     }
     
