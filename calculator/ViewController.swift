@@ -284,7 +284,7 @@ class ViewController: UIViewController {
     
     
     func roundfigure(){
-        if num2.rounded(.up) == num2.rounded(.down){
+        if (num2 < 2147483646 && num2.rounded(.up) == num2.rounded(.down)){
             let result1 = Int(self.num2)
             result.text = String(result1)
             self.num2 = Double(result1)
