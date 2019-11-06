@@ -239,7 +239,7 @@ class ViewController: UIViewController {
             }
             if operation == 0
             {
-                self.result.text = "Error"
+                self.result.text = "cannot divide by 0 "
             } else{
                 num2 = num1 / operation
                 
