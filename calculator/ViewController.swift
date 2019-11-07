@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
     
@@ -297,9 +298,10 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
-        
+        result.layer.masksToBounds = true
+        result.layer.cornerRadius = 30
         super.viewDidLoad()
+       
         
         
         
